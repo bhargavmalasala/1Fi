@@ -1,0 +1,168 @@
+export const marketplaceProducts = [
+  {
+    id: "iphone-15",
+    name: "Apple iPhone 15",
+    category: "Mobiles",
+    price: 69900,
+    originalPrice: 79900,
+    rating: 4.7,
+    reviews: 1842,
+    image: "/assets/products/iphone.svg",
+    description:
+      "A16 Bionic performance, a 48MP main camera and a durable colour-infused glass and aluminium design.",
+    variants: [
+      { id: "128-blue", label: "128 GB · Blue", price: 69900 },
+      { id: "128-black", label: "128 GB · Black", price: 69900 },
+      { id: "256-blue", label: "256 GB · Blue", price: 79900 },
+    ],
+    emiPlans: [
+      { id: "emi-3", months: 3, monthly: 23300, interest: "0% interest" },
+      { id: "emi-6", months: 6, monthly: 11650, interest: "0% interest" },
+      { id: "emi-9", months: 9, monthly: 7767, interest: "0% interest" },
+      { id: "emi-12", months: 12, monthly: 5825, interest: "0% interest" },
+    ],
+    details: [
+      "6.1-inch Super Retina XDR display",
+      "48MP Main + 12MP Ultra Wide camera",
+      "A16 Bionic chip",
+      "USB-C connector",
+    ],
+  },
+  {
+    id: "macbook-air",
+    name: "MacBook Air M3",
+    category: "Laptops",
+    price: 114900,
+    originalPrice: 119900,
+    rating: 4.8,
+    reviews: 927,
+    image: "/assets/products/macbook.svg",
+    description:
+      "Supercharged by the Apple M3 chip with a silent, fanless design and all-day battery life.",
+    variants: [
+      { id: "8-256", label: "8 GB · 256 GB · Midnight", price: 114900 },
+      { id: "8-512", label: "8 GB · 512 GB · Midnight", price: 134900 },
+      { id: "16-512", label: "16 GB · 512 GB · Starlight", price: 154900 },
+    ],
+    emiPlans: [
+      { id: "emi-6", months: 6, monthly: 19150, interest: "0% interest" },
+      { id: "emi-9", months: 9, monthly: 12767, interest: "0% interest" },
+      { id: "emi-12", months: 12, monthly: 9575, interest: "0% interest" },
+      { id: "emi-18", months: 18, monthly: 6383, interest: "0% interest" },
+    ],
+    details: [
+      "13.6-inch Liquid Retina display",
+      "Apple M3 chip with 8-core CPU",
+      "Up to 18 hours battery life",
+      "MagSafe 3 charging",
+    ],
+  },
+  {
+    id: "sony-headphones",
+    name: "Sony WH-1000XM5",
+    category: "Audio",
+    price: 29990,
+    originalPrice: 34990,
+    rating: 4.6,
+    reviews: 613,
+    image: "/assets/products/headphones.svg",
+    description:
+      "Industry-leading noise cancellation with premium sound, comfortable fit and long battery life.",
+    variants: [
+      { id: "black", label: "Black", price: 29990 },
+      { id: "silver", label: "Platinum Silver", price: 29990 },
+    ],
+    emiPlans: [
+      { id: "emi-3", months: 3, monthly: 9997, interest: "0% interest" },
+      { id: "emi-6", months: 6, monthly: 4998, interest: "0% interest" },
+      { id: "emi-9", months: 9, monthly: 3332, interest: "0% interest" },
+    ],
+    details: [
+      "Industry-leading noise cancellation",
+      "30-hour battery with quick charging",
+      "Multipoint connection",
+      "Speak-to-chat technology",
+    ],
+  },
+  {
+    id: "apple-watch",
+    name: "Apple Watch Series 10",
+    category: "Wearables",
+    price: 46900,
+    originalPrice: 49900,
+    rating: 4.7,
+    reviews: 438,
+    image: "/assets/products/watch.svg",
+    description:
+      "A thinner, more capable Apple Watch with a bigger display and advanced health features.",
+    variants: [
+      { id: "42-jet", label: "42 mm · Jet Black", price: 46900 },
+      { id: "46-rose", label: "46 mm · Rose Gold", price: 49900 },
+    ],
+    emiPlans: [
+      { id: "emi-3", months: 3, monthly: 15634, interest: "0% interest" },
+      { id: "emi-6", months: 6, monthly: 7817, interest: "0% interest" },
+      { id: "emi-12", months: 12, monthly: 3908, interest: "0% interest" },
+    ],
+    details: [
+      "Thinner design with wide-angle OLED display",
+      "Sleep apnoea notifications",
+      "Fast charging",
+      "Water resistant to 50 metres",
+    ],
+  },
+  {
+    id: "dyson-airwrap",
+    name: "Dyson Airwrap i.d.",
+    category: "Beauty",
+    price: 45900,
+    originalPrice: 49900,
+    rating: 4.5,
+    reviews: 286,
+    image: "/assets/products/dyson.svg",
+    description:
+      "Personalised styling with intelligent heat control and Coanda technology.",
+    variants: [
+      { id: "nickel", label: "Ceramic Pop", price: 45900 },
+      { id: "blue", label: "Vinca Blue", price: 45900 },
+    ],
+    emiPlans: [
+      { id: "emi-6", months: 6, monthly: 7650, interest: "0% interest" },
+      { id: "emi-9", months: 9, monthly: 5100, interest: "0% interest" },
+      { id: "emi-12", months: 12, monthly: 3825, interest: "0% interest" },
+    ],
+    details: [
+      "Intelligent heat control",
+      "Coanda airflow styling",
+      "Six-in-one styling attachments",
+      "No extreme heat",
+    ],
+  },
+  {
+    id: "nike-air-max",
+    name: "Nike Air Max Dn",
+    category: "Fashion",
+    price: 13495,
+    originalPrice: 14995,
+    rating: 4.4,
+    reviews: 152,
+    image: "/assets/products/shoes.svg",
+    description:
+      "Responsive Air cushioning and a futuristic silhouette designed for everyday movement.",
+    variants: [
+      { id: "8", label: "UK 8 · White", price: 13495 },
+      { id: "9", label: "UK 9 · White", price: 13495 },
+      { id: "10", label: "UK 10 · Black", price: 13495 },
+    ],
+    emiPlans: [
+      { id: "emi-3", months: 3, monthly: 4499, interest: "0% interest" },
+      { id: "emi-6", months: 6, monthly: 2249, interest: "0% interest" },
+    ],
+    details: [
+      "Dynamic Air cushioning",
+      "Breathable mesh upper",
+      "Rubber outsole for traction",
+      "Everyday lifestyle silhouette",
+    ],
+  },
+];

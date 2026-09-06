@@ -1,25 +1,24 @@
 export function ShopTabs({ active, onChange }) {
-  return (
-    <div className="tabs" role="tablist" aria-label="Shop category">
-      <button
-        className={`tab ${active === "brands" ? "active" : ""}`}
-        onClick={() => onChange("brands")}
-        role="tab"
-        aria-selected={active === "brands"}
-      >
-        <span>Top Brands</span>
-        {active === "brands" && <i />}
-      </button>
+  const tabs = [
+    { id: "brands", label: "Top Brands" },
+    { id: "nearby", label: "Nearby Stores" },
+    { id: "marketplace", label: "1Fi Marketplace" },
+  ];
 
-      <button
-        className={`tab ${active === "nearby" ? "active" : ""}`}
-        onClick={() => onChange("nearby")}
-        role="tab"
-        aria-selected={active === "nearby"}
-      >
-        <span>Nearby Stores</span>
-        {active === "nearby" && <i />}
-      </button>
+  return (
+    <div className="tabs tabs-three" role="tablist" aria-label="Shop category">
+      {tabs.map((tab) => (
+        <button
+          key={tab.id}
+          className={`tab ${active === tab.id ? "active" : ""}`}
+          onClick={() => onChange(tab.id)}
+          role="tab"
+          aria-selected={active === tab.id}
+        >
+          <span>{tab.label}</span>
+          {active === tab.id && <i />}
+        </button>
+      ))}
     </div>
   );
 }

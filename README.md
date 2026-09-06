@@ -32,3 +32,32 @@ The promotional banner is cropped directly from the supplied screenshot so its a
 ## JavaScript version
 
 This project intentionally uses `.js` and `.jsx` files only. There is no TypeScript configuration or TypeScript dependency.
+
+
+## Assignment implementation — 1Fi Marketplace
+
+The Shop page now has the required three options:
+
+1. Top Brands — existing implementation retained.
+2. Nearby Stores — intentionally blank/empty as permitted.
+3. 1Fi Marketplace — fully implemented.
+
+Marketplace data is kept outside the UI in `src/marketplace/products.js` and exposed through `src/marketplace/api.js`, which simulates asynchronous API retrieval.
+
+Implemented Marketplace flow:
+- Product listing with image, category, product name, pricing and EMI-from price.
+- Product search.
+- Category filtering.
+- Price sorting.
+- Loading skeletons.
+- API error state with retry.
+- Empty search state.
+- Product detail view.
+- Variant selection.
+- EMI plan selection.
+- Selected-plan summary.
+- Proceed CTA.
+- Responsive two-column mobile product grid.
+- Bottom navigation remains visible and content is padded/sticky CTA is positioned above it.
+
+The assignment PDF specifies the required Marketplace capabilities but does not contain the referenced product/content screens, so the product catalogue and detailed visual treatment are implemented as a consistent 1Fi-style mock Marketplace rather than pretending to reproduce unspecified reference screens.
