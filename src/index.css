@@ -1,5 +1,6 @@
 :root {
-  font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif;
+  --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-sans);
   color: #0d223b;
   background: #f7f7f7;
   font-synthesis: none;
@@ -84,8 +85,8 @@ button {
   color: #687487;
   background: transparent;
   cursor: pointer;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 17px;
+  font-weight: 700;
 }
 
 .tab.active {
@@ -126,7 +127,8 @@ button {
   outline: 0;
   color: #52657c;
   background: transparent;
-  font-size: 16px;
+  font-size: 17px;
+  font-weight: 500;
 }
 
 .search input::placeholder {
@@ -143,7 +145,7 @@ button {
   color: #0e223b;
   font-size: 20px;
   line-height: 1.15;
-  font-weight: 750;
+  font-weight: 659;
   letter-spacing: -0.25px;
 }
 
@@ -156,8 +158,8 @@ button {
 .brand-card {
   display: flex;
   align-items: center;
-  min-height: 104px;
-  padding: 14px 16px;
+  min-height: 108px;
+  padding: 15px 17px;
   border: 1px solid #e6e7e9;
   border-radius: 18px;
   background: #fff;
@@ -165,9 +167,9 @@ button {
 }
 
 .brand-logo {
-  flex: 0 0 72px;
-  width: 72px;
-  height: 72px;
+  flex: 0 0 74px;
+  width: 74px;
+  height: 74px;
   overflow: hidden;
   border-radius: 16px;
   background: #fff;
@@ -194,9 +196,9 @@ button {
   margin: 0;
   overflow: hidden;
   color: #15283f;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.25;
-  font-weight: 700;
+  font-weight: 600;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
@@ -204,7 +206,7 @@ button {
 .brand-copy p {
   margin: 6px 0 0;
   color: #8b929b;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.2;
   font-weight: 400;
 }
@@ -334,7 +336,7 @@ button {
 }
 
 .tabs-three .tab {
-  font-size: 14px;
+  font-size: 15px;
   padding-inline: 4px;
   text-align: center;
   white-space: nowrap;
@@ -355,7 +357,7 @@ button {
 
 .market-eyebrow {
   color: #7a38e9;
-  font-size: 8px;
+  font-size: 9px;
   line-height: 1;
   font-weight: 800;
   letter-spacing: .8px;
@@ -364,7 +366,8 @@ button {
 .marketplace-heading h1 {
   margin: 5px 0 4px;
   color: #10243d;
-  font-size: 23px;
+  font-size: 25px;
+  font-weight: 800;
   line-height: 1.1;
   letter-spacing: -.45px;
 }
@@ -372,7 +375,7 @@ button {
 .marketplace-heading p {
   margin: 0;
   color: #7e8998;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .market-search {
@@ -438,8 +441,8 @@ button {
   color: #657286;
   background: #fff;
   cursor: pointer;
-  font-size: 10px;
-  font-weight: 600;
+  font-size: 11px;
+  font-weight: 700;
 }
 
 .category-chip.selected {
@@ -469,7 +472,8 @@ button {
   outline: 0;
   background: transparent;
   color: #526278;
-  font-size: 9px;
+  font-size: 10px;
+  font-weight: 600;
   cursor: pointer;
 }
 
@@ -518,7 +522,7 @@ button {
   border-radius: 6px;
   color: #6030c5;
   background: #eee7ff;
-  font-size: 8px;
+  font-size: 9px;
   line-height: 1;
   font-weight: 800;
 }
@@ -531,7 +535,7 @@ button {
   display: block;
   margin-bottom: 3px;
   color: #8a94a2;
-  font-size: 8px;
+  font-size: 9px;
   line-height: 1;
   font-weight: 600;
 }
@@ -540,7 +544,8 @@ button {
   min-height: 26px;
   margin: 0;
   color: #15283f;
-  font-size: 12px;
+  font-size: 13px;
+  font-weight: 750;
   line-height: 1.25;
   font-weight: 700;
 }
@@ -554,18 +559,18 @@ button {
 
 .market-price-row strong {
   color: #172a42;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .market-price-row del {
   color: #9aa1ab;
-  font-size: 8px;
+  font-size: 9px;
 }
 
 .market-product-info p {
   margin: 4px 0 0;
   color: #7334e7;
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 700;
 }
 
@@ -681,7 +686,8 @@ button {
 .detail-heading h1 {
   margin: 3px 0 6px;
   color: #13263e;
-  font-size: 26px;
+  font-size: 28px;
+  font-weight: 800;
   line-height: 1.15;
 }
 
@@ -690,7 +696,8 @@ button {
   align-items: center;
   gap: 4px;
   color: #6f7b8b;
-  font-size: 12px;
+  font-size: 13px;
+  font-weight: 600;
 }
 
 .detail-rating svg {
@@ -706,7 +713,8 @@ button {
 
 .detail-price strong {
   color: #122640;
-  font-size: 23px;
+  font-size: 25px;
+  font-weight: 800;
 }
 
 .detail-price del {
@@ -717,7 +725,7 @@ button {
 .detail-description {
   margin: 7px 0 0;
   color: #778292;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.45;
 }
 
@@ -736,12 +744,13 @@ button {
 .detail-section-title strong,
 .detail-section-heading {
   color: #172a42;
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: 750;
 }
 
 .detail-section-title span {
   color: #7a38e9;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
 }
 
@@ -762,8 +771,8 @@ button {
   color: #627085;
   background: #fff;
   cursor: pointer;
-  font-size: 11px;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: 700;
 }
 
 .variant.selected {
@@ -782,8 +791,8 @@ button {
   display: flex;
   align-items: center;
   gap: 8px;
-  min-height: 48px;
-  padding: 7px 9px;
+  min-height: 54px;
+  padding: 8px 10px;
   border: 1px solid #e2e4e8;
   border-radius: 10px;
   color: #273b54;
@@ -826,17 +835,17 @@ button {
 }
 
 .emi-copy strong {
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .emi-copy small {
   color: #87909c;
-  font-size: 10px;
+  font-size: 11px;
 }
 
 .emi-option > strong {
   color: #172a42;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .detail-points {
@@ -847,7 +856,7 @@ button {
 .detail-points li {
   margin: 4px 0;
   color: #778292;
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1.35;
 }
 
@@ -881,18 +890,18 @@ button {
 
 .detail-cta-wrap strong {
   color: #172a42;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .market-cta {
-  min-height: 36px;
+  min-height: 40px;
   padding: 0 13px;
   border-radius: 9px;
   color: #fff;
   background: #7635ea;
   box-shadow: 0 5px 12px rgba(118,53,234,.18);
   cursor: pointer;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 750;
   white-space: nowrap;
 }

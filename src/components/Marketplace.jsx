@@ -31,7 +31,7 @@ function ProductCard({ product, onOpen }) {
   );
 }
 
-function ProductGrid({ products, loading, error, onRetry, onOpen }) {
+function ProductGrid({ products, loading, error, onRetry, onOpen, hasProducts }) {
   if (loading) {
     return (
       <div className="market-grid" aria-label="Loading products">
@@ -50,9 +50,9 @@ function ProductGrid({ products, loading, error, onRetry, onOpen }) {
   if (error) {
     return (
       <div className="market-message">
-        <strong>Couldn't load Marketplace</strong>
-        <span>Something went wrong while fetching products.</span>
-        <button onClick={onRetry}>Try again</button>
+        <strong>Unable to load products</strong>
+        <span>Please try again.</span>
+        <button type="button" onClick={onRetry}>Try again</button>
       </div>
     );
   }
@@ -60,8 +60,8 @@ function ProductGrid({ products, loading, error, onRetry, onOpen }) {
   if (!products.length) {
     return (
       <div className="market-message">
-        <strong>No products found</strong>
-        <span>Try a different search.</span>
+        <strong>{hasProducts ? "No matching products" : "No products available"}</strong>
+        <span>{hasProducts ? "Try a different search or category." : "Please check back soon."}</span>
       </div>
     );
   }
@@ -81,6 +81,7 @@ function ProductDetail({ productId, onBack }) {
   const [selectedEmi, setSelectedEmi] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
+  const [retryCount, setRetryCount] = useState(0);
 
   useEffect(() => {
     let active = true;
@@ -104,7 +105,7 @@ function ProductDetail({ productId, onBack }) {
     return () => {
       active = false;
     };
-  }, [productId]);
+  }, [productId, retryCount]);
 
   if (loading) {
     return (
@@ -125,8 +126,9 @@ function ProductDetail({ productId, onBack }) {
       <section className="market-detail">
         <button className="detail-back" onClick={onBack}><ArrowLeft size={18} /> Back</button>
         <div className="market-message">
-          <strong>Product unavailable</strong>
-          <span>{error || "Please try another product."}</span>
+          <strong>Unable to load product</strong>
+          <span>{error || "Please try again."}</span>
+          <button type="button" onClick={() => setRetryCount((count) => count + 1)}>Try again</button>
         </div>
       </section>
     );
@@ -339,6 +341,7 @@ export function Marketplace() {
         products={visibleProducts}
         loading={loading}
         error={error}
+        hasProducts={products.length > 0}
         onRetry={loadProducts}
         onOpen={setSelectedProductId}
       />
