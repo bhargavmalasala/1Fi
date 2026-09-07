@@ -187,7 +187,7 @@ button {
 
 .brand-copy {
   min-width: 0;
-  margin-left: 18px;
+  margin-left: 19px;
 }
 
 .brand-copy h3 {
@@ -311,7 +311,7 @@ button {
 }
 
 .marketplace {
-  margin-top: 21px;
+  margin-top: 20px;
   padding-bottom: 12px;
 }
 
@@ -341,7 +341,7 @@ button {
 .marketplace-heading p {
   margin: 0;
   color: #7e8998;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 .market-search {
@@ -407,7 +407,7 @@ button {
   color: #657286;
   background: #fff;
   cursor: pointer;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 600;
 }
 
@@ -423,7 +423,7 @@ button {
   display: flex;
   align-items: center;
   gap: 4px;
-  height: 30px;
+  height: 29px;
   padding: 0 7px;
   border: 1px solid #e2e4e8;
   border-radius: 15px;
@@ -438,7 +438,7 @@ button {
   outline: 0;
   background: transparent;
   color: #526278;
-  font-size: 10px;
+  font-size: 9px;
   cursor: pointer;
 }
 
@@ -523,7 +523,7 @@ button {
 
 .market-price-row strong {
   color: #172a42;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .market-price-row del {
@@ -534,7 +534,7 @@ button {
 .market-product-info p {
   margin: 4px 0 0;
   color: #7334e7;
-  font-size: 9px;
+  font-size: 10px;
   font-weight: 700;
 }
 
@@ -622,7 +622,7 @@ button {
   color: #667489;
   background: transparent;
   cursor: pointer;
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 650;
 }
 
@@ -650,7 +650,7 @@ button {
 .detail-heading h1 {
   margin: 3px 0 6px;
   color: #13263e;
-  font-size: 20px;
+  font-size: 26px;
   line-height: 1.15;
 }
 
@@ -659,7 +659,7 @@ button {
   align-items: center;
   gap: 4px;
   color: #6f7b8b;
-  font-size: 8px;
+  font-size: 12px;
 }
 
 .detail-rating svg {
@@ -675,18 +675,18 @@ button {
 
 .detail-price strong {
   color: #122640;
-  font-size: 18px;
+  font-size: 23px;
 }
 
 .detail-price del {
   color: #9ba2ad;
-  font-size: 9px;
+  font-size: 12px;
 }
 
 .detail-description {
   margin: 7px 0 0;
   color: #778292;
-  font-size: 9px;
+  font-size: 13px;
   line-height: 1.45;
 }
 
@@ -705,12 +705,12 @@ button {
 .detail-section-title strong,
 .detail-section-heading {
   color: #172a42;
-  font-size: 11px;
+  font-size: 14px;
 }
 
 .detail-section-title span {
   color: #7a38e9;
-  font-size: 8px;
+  font-size: 11px;
   font-weight: 700;
 }
 
@@ -731,7 +731,7 @@ button {
   color: #627085;
   background: #fff;
   cursor: pointer;
-  font-size: 8px;
+  font-size: 11px;
   font-weight: 600;
 }
 
@@ -795,17 +795,17 @@ button {
 }
 
 .emi-copy strong {
-  font-size: 9px;
+  font-size: 12px;
 }
 
 .emi-copy small {
   color: #87909c;
-  font-size: 7px;
+  font-size: 10px;
 }
 
 .emi-option > strong {
   color: #172a42;
-  font-size: 9px;
+  font-size: 12px;
 }
 
 .detail-points {
@@ -816,7 +816,7 @@ button {
 .detail-points li {
   margin: 4px 0;
   color: #778292;
-  font-size: 8px;
+  font-size: 11px;
   line-height: 1.35;
 }
 
@@ -845,12 +845,12 @@ button {
 
 .detail-cta-wrap small {
   color: #8a94a2;
-  font-size: 7px;
+  font-size: 10px;
 }
 
 .detail-cta-wrap strong {
   color: #172a42;
-  font-size: 10px;
+  font-size: 13px;
 }
 
 .market-cta {
@@ -861,7 +861,7 @@ button {
   background: #7635ea;
   box-shadow: 0 5px 12px rgba(118,53,234,.18);
   cursor: pointer;
-  font-size: 9px;
+  font-size: 12px;
   font-weight: 750;
   white-space: nowrap;
 }
@@ -882,7 +882,7 @@ button {
   }
 
   .marketplace-heading h1 {
-    font-size: 19px;
+    font-size: 21px;
   }
 
   .sort-control select {
