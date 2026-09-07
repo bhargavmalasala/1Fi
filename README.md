@@ -6,15 +6,15 @@ The project focuses on extending the existing 1Fi experience while maintaining c
 
 ## ✨ Features
 
-* 🛍️ Browse products with product images, pricing and details
-* 🔎 Search, category filtering and price sorting
-* 🎨 Product variant selection
-* 💳 Multiple EMI plans with interactive selection
-* 🚀 Proceed with the selected EMI plan
-* ⚡ Loading, error and empty states
-* 📱 Responsive design for desktop and mobile
-* 🧩 Reusable React components
-* 🔌 Structured mock API/data layer for products and EMI information
+* Browse products with product images, pricing and details
+* Search, category filtering and price sorting
+* Product variant selection
+* Multiple EMI plans with interactive selection
+* Proceed with the selected EMI plan
+* Loading, error and empty states
+* Responsive design for desktop and mobile
+* Reusable React components
+* Structured mock API/data layer for products and EMI information
 
 ## 🛠️ Tech Stack
 
