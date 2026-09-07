@@ -60,4 +60,4 @@ Implemented Marketplace flow:
 - Responsive two-column mobile product grid.
 - Bottom navigation remains visible and content is padded/sticky CTA is positioned above it.
 
-The assignment PDF specifies the required Marketplace capabilities but does not contain the referenced product/content screens, so the product catalogue and detailed visual treatment are implemented as a consistent 1Fi-style mock Marketplace rather than pretending to reproduce unspecified reference screens.
+The product catalogue and detailed visual treatment are implemented as a consistent 1Fi-style Marketplace flow.

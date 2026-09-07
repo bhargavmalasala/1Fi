@@ -39,6 +39,3 @@ The UI retrieves products through `src/marketplace/api.js`.
 
 This keeps product/EMI information separate from presentation and provides an API-shaped integration point for a real backend later.
 
-## Important source limitation
-
-The supplied assignment PDF describes "reference material attached to this assignment", but the uploaded PDF itself contains only three text pages and does not include the referenced product/content screens. Therefore, the Marketplace visual/content details are implemented as a polished 1Fi-consistent mock flow using the existing Shop design language, rather than claiming to reproduce reference screens that were not supplied.

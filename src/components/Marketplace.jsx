@@ -82,6 +82,8 @@ function ProductDetail({ productId, onBack }) {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [retryCount, setRetryCount] = useState(0);
+  const [planSelected, setPlanSelected] = useState(false);
+  const [planContinued, setPlanContinued] = useState(false);
 
   useEffect(() => {
     let active = true;
@@ -93,7 +95,9 @@ function ProductDetail({ productId, onBack }) {
         if (!active) return;
         setProduct(data);
         setSelectedVariant(data.variants[0]);
-        setSelectedEmi(data.emiPlans[1] || data.emiPlans[0]);
+        setSelectedEmi(data.emiPlans[0]);
+        setPlanSelected(false);
+        setPlanContinued(false);
       })
       .catch(() => {
         if (active) setError("We couldn't load this product.");
@@ -214,17 +218,44 @@ function ProductDetail({ productId, onBack }) {
         </ul>
       </div>
 
-      <div className="detail-cta-wrap">
-        <div>
-          <small>{selectedEmi?.months}-month EMI</small>
-          <strong>{formatINR(selectedEmi?.monthly)}/month</strong>
-        </div>
-        <button
-          className="market-cta"
-          onClick={() => alert(`Selected ${product.name} on ${selectedEmi.months}-month EMI.`)}
-        >
-          Proceed with plan
-        </button>
+      <div className={`detail-cta-wrap ${planSelected ? "plan-selected" : ""}`} aria-live="polite">
+        {!planSelected ? (
+          <>
+            <div>
+              <small>{selectedEmi?.months}-month EMI</small>
+              <strong>{formatINR(selectedEmi?.monthly)}/month</strong>
+            </div>
+            <button className="market-cta" type="button" onClick={() => setPlanSelected(true)}>
+              Proceed with plan
+            </button>
+          </>
+        ) : (
+          <div className="plan-confirmation">
+            <div className="plan-confirmation-mark">
+              <Check size={18} strokeWidth={2.5} />
+            </div>
+            <div className="plan-confirmation-copy">
+              <small className="plan-step">STEP 1 OF 2</small>
+              <strong>{planContinued ? "Ready to review" : "Plan selected"}</strong>
+              <span>{product.name}</span>
+              <small>{selectedEmi.months}-month EMI · {formatINR(selectedEmi.monthly)}/month</small>
+            </div>
+            <button
+              className="market-cta"
+              type="button"
+              onClick={() => {
+                if (planContinued) {
+                  setPlanSelected(false);
+                  setPlanContinued(false);
+                  return;
+                }
+                setPlanContinued(true);
+              }}
+            >
+              {planContinued ? "Edit plan" : "Continue"}
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );
