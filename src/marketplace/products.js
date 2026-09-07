@@ -7,7 +7,7 @@ export const marketplaceProducts = [
     originalPrice: 79900,
     rating: 4.7,
     reviews: 1842,
-    image: "/assets/products/iphone.svg",
+    image: "/assets/products/iphone.png",
     description:
       "A16 Bionic performance, a 48MP main camera and a durable colour-infused glass and aluminium design.",
     variants: [
@@ -36,7 +36,7 @@ export const marketplaceProducts = [
     originalPrice: 119900,
     rating: 4.8,
     reviews: 927,
-    image: "/assets/products/macbook.svg",
+    image: "/assets/products/macbook.png",  
     description:
       "Supercharged by the Apple M3 chip with a silent, fanless design and all-day battery life.",
     variants: [
@@ -65,7 +65,7 @@ export const marketplaceProducts = [
     originalPrice: 34990,
     rating: 4.6,
     reviews: 613,
-    image: "/assets/products/headphones.svg",
+    image: "/assets/products/headphones.png",
     description:
       "Industry-leading noise cancellation with premium sound, comfortable fit and long battery life.",
     variants: [
@@ -92,7 +92,7 @@ export const marketplaceProducts = [
     originalPrice: 49900,
     rating: 4.7,
     reviews: 438,
-    image: "/assets/products/watch.svg",
+    image: "/assets/products/watch.png",
     description:
       "A thinner, more capable Apple Watch with a bigger display and advanced health features.",
     variants: [
@@ -119,7 +119,7 @@ export const marketplaceProducts = [
     originalPrice: 49900,
     rating: 4.5,
     reviews: 286,
-    image: "/assets/products/dyson.svg",
+    image: "/assets/products/dyson.png",
     description:
       "Personalised styling with intelligent heat control and Coanda technology.",
     variants: [
@@ -146,7 +146,7 @@ export const marketplaceProducts = [
     originalPrice: 14995,
     rating: 4.4,
     reviews: 152,
-    image: "/assets/products/shoes.svg",
+    image: "/assets/products/shoes.png",
     description:
       "Responsive Air cushioning and a futuristic silhouette designed for everyday movement.",
     variants: [
@@ -173,7 +173,7 @@ export const marketplaceProducts = [
     originalPrice: 79999,
     rating: 4.6,
     reviews: 734,
-    image: "/assets/products/iphone.svg",
+    image: "/assets/products/samsung.png",
     description:
       "A bright AMOLED display, pro-grade cameras and fast performance in a compact premium design.",
     variants: [
@@ -200,7 +200,7 @@ export const marketplaceProducts = [
     originalPrice: 84999,
     rating: 4.5,
     reviews: 421,
-    image: "/assets/products/iphone.svg",
+    image: "/assets/products/pixel.png",
     description:
       "A beautifully balanced phone with intelligent photography, a smooth display and the Tensor G4 chip.",
     variants: [
@@ -227,7 +227,7 @@ export const marketplaceProducts = [
     originalPrice: 29900,
     rating: 4.6,
     reviews: 298,
-    image: "/assets/products/headphones.svg",
+    image: "/assets/products/bose.png",
     description:
       "Comfortable wireless headphones with adjustable noise cancellation and rich, detailed sound.",
     variants: [
@@ -253,7 +253,7 @@ export const marketplaceProducts = [
     originalPrice: 15999,
     rating: 4.4,
     reviews: 187,
-    image: "/assets/products/watch.svg",
+    image: "/assets/products/fitbit.png",
     description:
       "A slim fitness tracker with heart-rate insights, built-in GPS and up to a week of battery life.",
     variants: [
@@ -279,7 +279,7 @@ export const marketplaceProducts = [
     originalPrice: 15995,
     rating: 4.5,
     reviews: 356,
-    image: "/assets/products/dyson.svg",
+    image: "/assets/products/airfryer.png",
     description:
       "Make crisp favourites with little or no added oil using rapid hot-air technology and a large basket.",
     variants: [
@@ -305,7 +305,7 @@ export const marketplaceProducts = [
     originalPrice: 18999,
     rating: 4.5,
     reviews: 244,
-    image: "/assets/products/shoes.svg",
+    image: "/assets/products/adidas.png",
     description:
       "Lightweight running shoes with responsive cushioning and a supportive, breathable knit upper.",
     variants: [

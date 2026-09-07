@@ -249,6 +249,7 @@ button {
 }
 
 .nav-item {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -263,8 +264,38 @@ button {
 }
 
 .nav-item.active {
+  isolation: isolate;
   color: #7635ea;
   font-weight: 700;
+}
+
+.nav-item.active::before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 42px;
+  height: 3px;
+  border-radius: 0 0 3px 3px;
+  background: #7635ea;
+  content: "";
+  transform: translateX(-50%);
+}
+
+.nav-item.active::after {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  z-index: -1;
+  width: 64px;
+  height: 38px;
+  border-radius: 50%;
+  /* background: radial-gradient(ellipse, rgba(118, 53, 234, 0.20), rgba(118, 53, 234, 0) 72%); */
+  content: "";
+  transform: translateX(-50%);
+}
+
+.nav-item.active svg {
+  filter: drop-shadow(0 2px 6px rgba(118, 53, 234, 0.25));
 }
 
 .nav-item span {
