@@ -49,9 +49,9 @@ npm run build
 
 ## 🔗 Demo
 
-**Live Demo:** `YOUR_DEPLOYED_URL`
+**Live Demo:** `https://1fi-murex-five.vercel.app/`
 
-**GitHub:** `YOUR_GITHUB_URL`
+**GitHub:** `https://github.com/bhargavmalasala/1Fi`
 
 ---
 
