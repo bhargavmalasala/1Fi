@@ -301,10 +301,11 @@ button {
 }
 
 .tabs-three .tab {
-  font-size: 11px;
+  font-size: 14px;
   padding-inline: 4px;
   text-align: center;
   white-space: nowrap;
+  font-weight: 700;
 }
 
 .marketplace {

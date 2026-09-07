@@ -2,7 +2,7 @@ export function ShopTabs({ active, onChange }) {
   const tabs = [
     { id: "brands", label: "Top Brands" },
     { id: "nearby", label: "Nearby Stores" },
-    { id: "marketplace", label: "1Fi Marketplace" },
+    { id: "marketplace", label: "Marketplace" },
   ];
 
   return (
